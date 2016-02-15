@@ -6,7 +6,17 @@
     "jquery-validation": "1.14.0",
     "jquery-validation-unobtrusive": "3.2.4",
     "jquery": "2.1.4",
-    "angular": "1.4.6",
-    "angular-resource": "1.4.6"
+    "angular-resource": "1.4.6",
+    "font-awesome": "4.4.0",
+    "simple-line-icons": "~2.2.3",
+    "jquery.uniform": "~2.1.2",
+    "bootstrap-switch": "3.3.2",
+    "bootstrap-hover-dropdown": "~2.2.1",
+    "blockui": "*",
+    "jquery.cookie": "1.4.1",
+    "angular-sanitize": "1.4.6",
+    "ui-router": "~0.2.18",
+    "angular-bootstrap": "0.13.4",
+    "oclazyload": "~1.0.9"
   }
 }

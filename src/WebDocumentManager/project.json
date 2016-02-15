@@ -1,4 +1,4 @@
-﻿{
+{
   "version": "1.0.0-*",
   "compilationOptions": {
     "emitEntryPoint": true
@@ -33,5 +33,6 @@
   "publishExclude": [
     "**.user",
     "**.vspscc"
-  ]
+  ],
+  "userSecretsId": "aspnet5-WebDocumentManager-20160215101041"
 }
