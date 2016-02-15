@@ -51,6 +51,11 @@ namespace WebDocumentManager
 
             app.UseApplicationInsightsExceptionTelemetry();
 
+            app.UseDefaultFiles(new Microsoft.AspNet.StaticFiles.DefaultFilesOptions()
+            {
+                DefaultFileNames = new[] { "index.html" }
+            });
+
             app.UseStaticFiles();
 
             app.UseMvc();

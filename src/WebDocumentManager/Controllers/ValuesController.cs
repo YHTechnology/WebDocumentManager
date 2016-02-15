@@ -6,6 +6,7 @@ using Microsoft.AspNet.Mvc;
 
 namespace WebDocumentManager.Controllers
 {
+    /*
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
@@ -41,4 +42,5 @@ namespace WebDocumentManager.Controllers
         {
         }
     }
+    */
 }
