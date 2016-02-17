@@ -42,6 +42,12 @@ dlldata.c
 project.lock.json
 artifacts/
 
+# BOWER
+lib/
+
+# NPM
+node_modules/
+
 *_i.c
 *_p.c
 *_i.h
