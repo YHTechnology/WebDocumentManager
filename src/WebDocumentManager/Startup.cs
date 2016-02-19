@@ -53,7 +53,7 @@ namespace WebDocumentManager
 
             app.UseDefaultFiles(new Microsoft.AspNet.StaticFiles.DefaultFilesOptions()
             {
-                DefaultFileNames = new[] { "index.html" }
+                DefaultFileNames = new[] { "login.html" }
             });
 
             app.UseStaticFiles();

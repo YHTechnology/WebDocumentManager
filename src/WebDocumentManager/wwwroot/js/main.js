@@ -148,17 +148,18 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
             url: "/dashboard.html",
             templateUrl: "views/dashboard.html",            
             data: {pageTitle: 'Admin Dashboard Template'},
-            //controller: "DashboardController",
-            //resolve: {
-            //    deps: ['$ocLazyLoad', function($ocLazyLoad) {
-            //        return $ocLazyLoad.load({
-            //            name: 'MetronicApp',
-            //            insertBefore: '#ng_load_plugins_before', // load the above css files before a LINK element with this ID. Dynamic CSS files must be loaded between core and theme css files
-            //            files: [
-            //            ] 
-            //        });
-            //    }]
-            //}
+            controller: "DashboardController",
+            resolve: {
+                deps: ['$ocLazyLoad', function($ocLazyLoad) {
+                    return $ocLazyLoad.load({
+                        name: 'App',
+                        insertBefore: '#ng_load_plugins_before', // load the above css files before a LINK element with this ID. Dynamic CSS files must be loaded between core and theme css files
+                        files: [
+                            '/js/controllers/dashboard_controller.js'
+                        ] 
+                    });
+                }]
+            }
         })
       
 
