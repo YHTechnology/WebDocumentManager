@@ -1357,12 +1357,12 @@ Page content
   .page-container-bg-solid .page-title {
     color: #666;
     margin-bottom: 20px;
-    margin-top: 20px; }
+    margin-top: 0px; }
     .page-content-white .page-title small,
     .page-container-bg-solid .page-title small {
       color: #666; }
   .page-content-white .page-title {
-    margin: 25px 0;
+    margin: 0px 0;
     font-size: 24px; }
 
 /* Page breadcrumb */

@@ -143,11 +143,11 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
     $urlRouterProvider.otherwise("/dashboard.html");  
     $stateProvider
 
-        // Dashboard
+        // 系统总览
         .state('dashboard', {
             url: "/dashboard.html",
             templateUrl: "views/dashboard.html",            
-            data: {pageTitle: 'Admin Dashboard Template'},
+            data: {pageTitle: '系统总览'},
             controller: "DashboardController",
             resolve: {
                 deps: ['$ocLazyLoad', function($ocLazyLoad) {
@@ -155,11 +155,21 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
                         name: 'App',
                         insertBefore: '#ng_load_plugins_before', // load the above css files before a LINK element with this ID. Dynamic CSS files must be loaded between core and theme css files
                         files: [
-                            '/js/controllers/dashboard_controller.js'
+                            'lib/highcharts/highcharts.js',
+                            'lib/highcharts-ng/dist/highcharts-ng.js',
+                            '/js/controllers/dashboard_controller.js',
+                            
                         ] 
                     });
                 }]
             }
+        })
+
+        // 建安台账
+        .state('ja_stand_book',{
+            url: '/ja_stand_book',
+            templateUrl: 'views/ja_stand_book.html',
+            data: {pageTitle: '建安台账'}
         })
       
 
